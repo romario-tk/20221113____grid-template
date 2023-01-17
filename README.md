@@ -1,0 +1,3 @@
+[![.github/workflows/EditorConfig.yml](https://github.com/romario-tk/20221113____grid-template/actions/workflows/EditorConfig.yml/badge.svg)](https://github.com/romario-tk/20221113____grid-template/actions/workflows/EditorConfig.yml)
+[![HTML CSS valid](https://github.com/romario-tk/20221113____grid-template/actions/workflows/HTML5Validator.yml/badge.svg)](https://github.com/romario-tk/20221113____grid-template/actions/workflows/HTML5Validator.yml)
+[![Pages Deployment Successful](https://github.com/romario-tk/20221113____grid-template/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/romario-tk/20221113____grid-template/actions/workflows/pages/pages-build-deployment)
