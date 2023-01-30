@@ -1,0 +1,62 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+@mixin abs-position($t: 0) {
+  position: absolute;
+  top: $t;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.skill-item {
+
+  position: relative;
+
+  &__title {
+    margin: 0;
+    z-index: 1;
+
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+
+    @include md-min {
+      font-size: 1.25rem;
+    }
+
+    @include md {
+      font-size: 1.125rem;
+    }
+
+    @include abs-position;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $gap;
+    height: 100%;
+  }
+
+  &__image {
+    background-color: $color-primary;
+    background-image: url(../img/img-html.png);
+    background-position: 50% 50%;
+    background-size: cover;
+
+    @include abs-position;
+  }
+
+  &__overlay {
+    opacity: 0.8;
+    background-color: $color-primary;
+    @include abs-position;
+  }
+}
+
+@for $i from 1 through 9 {
+  .skill-item:nth-of-type(#{$i}) {
+    grid-area: a#{$i};
+  }
+}
